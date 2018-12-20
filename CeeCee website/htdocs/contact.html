@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CeeCee | Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style-contact.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/ceecee-icon.png" type="image/png" sizes="16x16">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <nav>
+                <h1 class="logo">CeeCee</h1>
+                <div id="burger-nav"></div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ceecee.html">CeeCee</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://www.facebook.com/CeeCeeEnschede" target="_blank" class="fa fa-facebook"></a>
+                    <li><a href="https://twitter.com/CeeCee_Enschede" target="_blank" class="fa fa-twitter"></a></li>
+                    <li><a href="http://www.linkedin.com/groups/CeeCee-Creatieve-Campus-Enschede-1886481/about" target="_blank" class="fa fa-linkedin"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="main-header">
+        <div class="text-box">
+            <span class="border">Connect company</span><br>
+            <span class="border">Connect people</span><br>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="main-title">
+            <h1>Let's connect <br>company &amp; people</h1>
+        </div>
+        <section>
+            <form id="contact-form" action="form-action.php" method="post">
+			<div class="center-text">
+			<h3>Connect your Company & People</h3>
+			</div>
+			<div>
+				<label>
+					<span>Naam (verplicht)</span>
+					<input placeholder="Vul hier je naam in" type="text"  name="naam" required autofocus>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Email (verplicht)</span>
+					<input placeholder="Vul hier je E-mail in " name="email" type="email" required>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Telefoon (verplicht)</span>
+					<input placeholder=" Vul hier je telefoonnummer in" name="telefoon" type="tel"  required>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Bedrijfsnaam (verplicht)</span>
+					<input placeholder="Vul hier je bedrijfsnaam in" type="text" name="bedrijfsnaam"  required>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Bericht</span>
+					<textarea placeholder="Aanvullende informatie" name="bericht" required></textarea>
+				</label>
+			</div>
+			<div>
+				<button name="submit" type="submit" id="contact-submit">LET'S CONNECT</button>
+			</div>
+		</form>
+        </section>
+    </div>
+    <footer>Copyright &copy; 2018 Good_Fellas Inc. Alle rechten voorbehouden.</footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/menu.js"></script>
+</html>

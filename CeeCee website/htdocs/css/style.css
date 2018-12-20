@@ -1,0 +1,536 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url(../fonts/Lato-Regular.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url(../fonts/Lato-Black.ttf);
+    font-style: normal;
+    font-weight: 900;
+}
+
+.wrapper {
+    width: 96%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+/* header & nav ====================================*/
+
+header {
+    background: #000;
+    opacity: 1;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+}
+
+header h1 {
+    margin: 20px;
+    text-indent: -10000px;
+    background: url(../img/ceecee-logo.png) no-repeat;
+    height: 64px;
+    width: 100px;
+    float: left;
+}
+
+header:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+header nav ul {
+    float: right;
+}
+
+header nav li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 45px 20px 0 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+header nav li:nth-child(7) {
+    margin-right: 0px;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav li a:hover {
+    text-decoration: none;
+    color: #e4221c;
+}
+
+/* main header image ====================================*/
+
+#main-header {
+    background: url(../img/home-main-banner.jpg) no-repeat;
+    width: 100%;
+    height: 800px;
+    margin-bottom: 40px;
+}
+
+.text-box {
+    padding-top: 200px;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.text-box span.border {
+    background: #fff;
+    color: #000;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.text-box-home {
+    padding-top: 200px;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.text-box-home span.border {
+    background: #fff;
+    color: #000;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+
+/* Social icons ====================================*/
+
+.fa {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.fa-facebook {
+    color: white;
+}
+
+.fa-facebook:hover {
+    color: #3B5998;
+}
+
+.fa-twitter {
+    color: white;
+}
+
+.fa-twitter:hover {
+    color: #55ACEE;
+}
+
+.fa-linkedin {
+    color: white;
+}
+
+.fa-linkedin:hover {
+    color: #007bb5;
+}
+
+/* company logo small info ====================================*/
+
+.main-title {
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.main-title h1:nth-child(2) {
+    font-size: 90px;
+    letter-spacing: 5px;
+    padding-bottom: 50px;
+}
+
+#company-info li {
+    width: 400px;
+    float: left;
+    list-style-type: none;
+}
+
+#company-info li:nth-child(1) {
+    margin: 0 8% 0 0;
+}
+
+#company-info:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+#company-info h1 {
+    padding: 20px 0;
+}
+
+#company-info h5 {
+    text-transform: uppercase;
+    color: #555;
+}
+
+#company-info p {
+    line-height: 25px;
+}
+
+#company-info-1 li {
+    width: 46%;
+    float: left;
+    list-style-type: none;
+}
+
+#company-info-1 li:nth-child(2) {
+    margin: 0 2%;
+}
+
+#company-info-1:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+section {
+    padding-bottom: 70px;
+}
+
+.button1 {
+    background-color: #e4221c;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.button1:hover {
+    background-color: white;
+    color: #e4221c;
+    border: 5px solid #e4221c;
+}
+
+
+.company-logo-bert {
+    display: block;
+    width: 400px;
+    height: 400px;
+    background: url(../img/company-bert-logo.png);
+}
+
+.company-logo-bert:hover {
+    background: url(../img/company-bert-logo-hover.png);
+}
+
+.bert {
+    display: none;
+}
+
+.company-logo-dus {
+    display: block;
+    width: 400px;
+    height: 400px;
+    background: url(../img/company-dus-logo.png);
+}
+
+.company-logo-dus:hover {
+    background: url(../img/company-dus-logo-hover.png);
+}
+
+.dus {
+    display: none;
+}
+
+.company-logo-moneybird {
+    display: block;
+    width: 400px;
+    height: 400px;
+    background: url(../img/company-moneybird-logo.png);
+}
+
+.company-logo-moneybird:hover {
+    background: url(../img/company-moneybird-logo-hover.png);
+}
+
+.moneybird {
+    display: none;
+}
+
+.company-logo-zinindezaak {
+    display: block;
+    width: 400px;
+    height: 400px;
+    background: url(../img/company-zinindezaak-logo.png);
+}
+
+.company-logo-zinindezaak:hover {
+    background: url(../img/company-zinindezaak-logo-hover.png);
+}
+
+.zin {
+    display: none;
+}
+
+
+/* text */
+.center-text p {
+    text-align: center;
+    line-height: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #e4221c;
+}
+
+a:hover {
+    color: black;
+}
+
+/* footer ====================================*/
+
+footer {
+    padding: 15px;
+    margin-top: 40px;
+    width: 100%;
+    background: black;
+    color: grey;
+    text-align: center;
+}
+
+/* Mobile ==================================== */
+@media screen and (max-width: 905px) {
+    header h1 {
+        float: none;
+        margin: 20px auto 0;
+    }
+
+    header nav li {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    header .wrapper {
+        padding: 0;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 0;
+    }
+
+    header nav li a {
+        display: block;
+        text-align: left;
+        padding: 20px 0 20px 50px;
+    }
+
+    #burger-nav {
+        width: 100%;
+        height: 40px;
+        background: url(../img/burger-nav-icon.png) no-repeat 9% center;
+        cursor: pointer;
+    }
+
+    header nav ul {
+        height: 0;
+        overflow: hidden;
+    }
+
+    header nav ul.open {
+        height: auto;
+    }
+
+    #company-info li {
+        float: none;
+        text-align: center;
+        list-style-type: none;
+        width: 100%;
+        padding-bottom: 60px
+    }
+
+    .company-logo-bert {
+        display: none;
+    }
+
+    .bert {
+        width: 100%;
+        display: flex;
+    }
+
+    .company-logo-dus {
+        display: none;
+    }
+
+    .dus {
+        width: 100%;
+        display: flex;
+    }
+
+    .company-logo-moneybird {
+        display: none;
+    }
+
+    .moneybird {
+        width: 100%;
+        display: flex;
+    }
+
+    .company-logo-zinindezaak {
+        display: none;
+    }
+
+    .zin {
+        width: 100%;
+        display: flex;
+    }
+     .text-box-home {
+        display: none;
+    }
+    
+    .text-box-mobile {
+    padding-top: 200px;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+.text-box-mobile span.border {
+    background: #fff;
+    color: #000;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+    
+}
+
+/* Slideshow ======================================== */
+
+
+#slideshow1 {
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.slide-wrapper {
+    width: 2912px;
+    -webkit-animation: slide 18s ease infinite;
+}
+
+.slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+}
+
+.slide:nth-child(1) {
+    background-image: url(../fotos/slideshow-ceecee-01.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide:nth-child(2) {
+    background-image: url(../fotos/slideshow-ceecee-02.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide:nth-child(3) {
+    background-image: url(../fotos/slideshow-ceecee-03.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide:nth-child(4) {
+    background-image: url(../fotos/slideshow-ceecee-04.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide-number {
+    color: #000;
+    text-align: center;
+    font-size: 10em;
+}
+
+@-webkit-keyframes slide {
+    20% {
+        margin-left: 0px;
+    }
+
+    30% {
+        margin-left: -728px;
+    }
+
+    50% {
+        margin-left: -728px;
+    }
+
+    60% {
+        margin-left: -1456px;
+    }
+
+    70% {
+        margin-left: -1456px;
+    }
+
+    80% {
+        margin-left: -2184px;
+    }
+
+    90% {
+        margin-left: -2184px;
+    }
+}
