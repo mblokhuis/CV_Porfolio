@@ -36,8 +36,7 @@ body, html{
 
 .pimg3{
 	background-image: url('../img/sfcop.jpeg');
-	min-height: 400px;
-	
+	min-height: 400px;	
 }
 
 .pimg4{
@@ -68,7 +67,6 @@ body, html{
 	padding: 20px;
 }
 
-
 #content{
 			display: grid;
 			grid-template-columns: repeat(6, 1fr);
@@ -83,6 +81,7 @@ body, html{
 			padding: 30px;            
 
 		}
+
 #content div:nth-child(even){
 			background: white;
 			padding: 30px;
@@ -107,9 +106,6 @@ body, html{
 		filter: grayscale(100%);
 		
 	  }
-}
-
-}
 
 .name	{
 	font-size: 200px;
@@ -131,21 +127,21 @@ body, html{
 }
 
 .work {
-	color: black;
-	
+	color: black;	
 }
 
 #social-links .media	{
 	object-position: 50% 50%;
-	
 }
 
 .projects {
 	object-position: 50% 50%;
-
 }
-.nav.navbar-nav.navbar-right li a {
-	color: black;
-}
+@media(max-width:568px){
+	.pimg1, .pimg2, .pimg3{
+	  background-attachment:scroll;
+	}
+  }
+  
 
 
