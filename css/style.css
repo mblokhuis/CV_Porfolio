@@ -1,14 +1,72 @@
-body {
+
+body, html{
+	height: 100%;
 	margin: 0;
-	padding:0;
-	font-family: 'Lato', sans-serif;
 	font-size: 25px;
-	background: url(../img/guggenheimbw.png), url(../img/goldengatebridge.jpeg);
-	background-repeat: no-repeat, no-repeat;
-	background-position: left top, right bottom;
-	background-size: contain;
-    width: 100%;
-}    
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	line-height 1.8em;
+	color: #666;
+}
+	
+.pimg1, .pimg2, .pimg3, .pimg4 {
+	position: relative;
+
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	/*
+		fixed = parallax
+		scroll = normal
+	*/
+
+	background-attachment: fixed;
+}
+
+.pimg1{
+	background-image: url('../img/guggenheimbw.png');
+	min-height: 400px;
+}
+
+.pimg2{
+	background-image: url('../img/goldengatebridge.jpeg');
+	min-height: 400px;
+}
+
+.pimg3{
+	background-image: url('../img/sfcop.jpeg');
+	min-height: 400px;
+	
+}
+
+.pimg4{
+	background-image: url('../img/Guggenheim.JPG');
+	min-height: 400px;
+}
+
+.section-dark{
+	background-color: f4f4f4;
+	color: #666;
+	text-align-last: center;
+}
+
+.ptext{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-size: 27px;
+	letter-spacing: 8px;
+	text-transform: uppercase;	
+}
+
+.ptext .border{
+	background-color: #111;
+	color: #fff;
+	padding: 20px;
+}
 
 
 #content{
@@ -51,25 +109,39 @@ body {
 	  }
 }
 
-.h1	{
-	color: palevioletred;
-	font-size: 40px;
-	font-style: bold; 
+}
+
+.name	{
+	font-size: 200px;
+	font-weight: ;
+	text-align: center;
+	color: black;
 }
 
 .title	{ 
 	font-size: 75px;
-	font-weight: bold;
+	font-weight: ;
 	text-align: center;
 	color: black;
-	text-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px darkgray;  
 }
 
 .five {
-	color:black;
+	color: black;
+	font-size: 20px;
 }
 
-.screenshots {
+.work {
+	color: black;
+	
+}
+
+#social-links .media	{
+	object-position: 50% 50%;
+	
+}
+
+.projects {
+	object-position: 50% 50%;
 
 }
 .nav.navbar-nav.navbar-right li a {
