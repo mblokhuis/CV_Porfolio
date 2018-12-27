@@ -27,29 +27,56 @@
 
     <div class="container">
 
-<!-- MB logo
-================================================================ -->      
-        <div class="row" style="background: none;">
-        <div class="col-md" data-aos="fade-down" data-aos-duration="1500"><div><img src="png/mb-logo-white.svg" alt="mb-logo-white.svg" width=150px height="150px"></div>
-        </div>   
-            
 <!-- Navigation Bar
 ================================================================ -->      
-<nav class="navbar navbar-expand-md">
-    <ul
-</nav>
-
-
-
-
-
-<!-- MB logo
-================================================================ -->
-        </div>
-        <div class="col-md" data-aos="fade-down" data-aos-duration="1500"><div><img src="png/mb-logo-white.svg" alt="mb-logo-white.svg" width=150px height="150px"></div>
-        </div>
-
-    <div class="container">
+<nav class="navbar">
+                <span class='open-slide'>
+                        <a href="#" onclick="openSlideMenu()">
+                          <svg width="30" height="30">
+                                <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                                <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                                <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                           </svg>
+                        </a>
+                     </span>       
+                     
+                     <ul class="navbar-nav">
+                       <li><a href="#">Home</a></li>
+                       <li><a href="#">About me</a></li>
+                       <li><a href="#">Curriculum Vitae</a></li>
+                       <li><a href="#">Portfolio</a></li>
+                </ul>
+                </nav>
+                
+                <div id="side-menu" class="side-nav">
+                        <a href="#" class="btn-close"
+                        onclick="closeSlideMenu()">&times;</a>
+                        <a href="#">Home</a>
+                        <a href="#">About me</a>
+                        <a href="#">Curriculum Vitae</a>
+                        <a href="#">Portfolio</a>
+                </div>
+                
+                <div id="main">
+                </div>
+                
+                <script>
+                
+                function openSlideMenu(){
+                        document.getElementById('side-menu').style.width
+                        = '250px';        
+                        document.getElementById('main').style.marginLeft
+                        = '250px';        
+                        }
+                
+                        function closeSlideMenu(){
+                        document.getElementById('side-menu').style.width
+                        = '0';        
+                        document.getElementById('main').style.marginLeft
+                        = '0';        
+                        }
+                </script>
+                
 
 <!-- Avatar
 ================================================================ -->
@@ -73,14 +100,14 @@
 
 <section class="section section-light">
 
-<div class="five" data-aos="fade-left" data-aos-duration="1500"><p><br>
+<div class="text" data-aos="fade-left" data-aos-duration="1500"><p><br>
         Welcome to my site. I'm an junior webdeveloper. And i love good design, architecture and all things Apple.
         Some of my hobbies are videography and iPhoneography. All photos you see on this website are made by myself on my trips to America.<br>
         <br></p></div>
 
 <!-- Curriculum Vitae
 ================================================================ -->
-<div class="five" data-aos="zoom-in-down" data-aos-duration="1500"><h4>PERSONALIA</h4>
+<div class="text" data-aos="zoom-in-down" data-aos-duration="1500"><h4>PERSONALIA</h4>
     <p>Martijn Blokhuis</p>
     <i class="fa fa-address-card-o" style="font-size:36px"></i>
     <p>Walmink Es 6 <br>7541PK Enschede</p>
@@ -107,7 +134,7 @@
 
     <section class="section section-dark">
 
-    <div class="five" data-aos="zoom-in-down" data-aos-duration="1500">
+    <div class="text" data-aos="zoom-in-down" data-aos-duration="1500">
     <br>
     <p><b>CodeGorilla - Enschede</b><br>Junior web developer <br><i>juni 2018 - oktober 2018</i></p>
     <p><b>UWV SMZ - Hengelo</b><br>Administratief Medewerker<br><i>juni 2018 - oktober 2018</i></p>
@@ -131,7 +158,8 @@
             </div>
         </div>
 
-    <section class="section section-dark">
+    <section id="portfolio">
+    <div class="section section-dark">
 
     <p><div class="projects" data-aos="fade-right" data-aos-duration="1500">CodeGorilla Hackaton</div>
        <div class="screenshots"></div><a href="CeeCee website/htdocs/index.html"><img src="png/ceeceewebsite.png" data-aos="fade-right" data-aos-duration="1500" alt="ceeceewebsite" height="175" width="250"></div></div></div></p>
@@ -153,49 +181,16 @@
 
 <!-- Social Media Buttons
 ================================================================ -->
-<section class="social-links">
-    <div class="media">
+<section class="social-media">
+    <div class="links">
         <a href="https://github.com/mblokhuis"><img src='png/icons8-github-50.png' width="75px" height="75px"/></a></lu>
         <a href="https://www.youtube.com/channel/UCRATgIoJP1Ea9AVrusSls0Q?view_as=subscriber"><img src='png/youtube-logo-png-46034.png' width="75px" height="75px"/></a></lu>
-        <a href="http://flickr.com/mblokhuis/" ><img src='png/flickr-icon-8734.png' width="60px" height="60px"/></a></lu>
-        <a href="https://nl.linkedin.com/in/mblokhuis/"><img src='png/linkedindrawn.svg' width="75px" height="75px" /></a></lu>
-   
+        <a href="http://flickr.com/mblokhuis/" ><img src='png/flickr-icon-8734.png' width="75px" height="75px"/></a></lu>
+        <a href="https://nl.linkedin.com/in/mblokhuis/"><img src='png/linkedin-distorted-round-icon-by-Vexels.png' width="75px" height="75px" /></a></lu>
+        <a target="_blank" href="https://www.vexels.com/vectors/preview/140687/linkedin-distorted-round-icon"> <h6>Linkedin and Youtube distorted round icon</a> |   Designed by Vexels.com</a></h6>
 </div>
 </div>       
 </section>
-
-
- <!--==========================
-      Contact Section
-    
-    <section id="contact">
-            <div class="container"  data-aos="zoom-out-down" data-aos-duration="1500">
-              <div class="section-header">
-                <h3 class="section-title">Contact</h3>
-                <p class="section-description">Dit is mijn contact pagina. Stuur me een @mail om contact met
-                met op te nemen. Je kunt hier ook mijn Linekdin checken. Ik zou het ook gaaf vinden als je mijn
-                Github bijdragen wilt bekijken. Al mijn werk staat daar op. Van het allereerste begin tot de 
-                meest flitsende codes die ik kan maken.</p>
-              </div>
-            </div>
-            
-            <div class="container mt-5"  data-aos="zoom-out-down" data-aos-duration="2500">
-              <div class="row justify-content-center">
-                <div class="col-lg-3 col-md-4">
-                  <div class="info">
-                    <div>
-                      <i class="fa fa-envelope"></i>
-                      <p>jwichers@hotmail.com</p>
-                    </div>
-                  </div>
-      
-                  <div class="social-links">
-                    <a href="https://www.linkedin.com/in/jeroen-wichers-35a55051/" target="_blank" class="fab fa-linkedin"></a>
-                    <a href="https://github.com/JeroenArneWichers" target="_blank" class="fab fa-github"></a>
-                  </div>
-                </div>
-          </section>
-============================-->
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
