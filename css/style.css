@@ -123,17 +123,34 @@ body, html{
 	text-align: center;	
 }
 
+.portfolio .section-dark {
+	object-position: right;
+}
+
 .projects {
 	text-align: center;
-
-.screenshots {
-	padding: 0;
- 	 margin: 0 0 45px 0;
-  	list-style: none;
-  	text-align: center;
 }
 
+.screenshot1{
+	text-align: center;
 }
+
+.screenshot2{
+	text-align: center;
+}
+
+.screenshot3{
+	text-align: center;
+}
+
+.screenshot4{
+	text-align: center;
+}
+
+.screenshot5{
+	text-align: center;
+}
+
 @media(max-width:568px){
 	.pimg1, .pimg2, .pimg3{
 	  background-attachment:scroll;
