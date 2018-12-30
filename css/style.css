@@ -119,6 +119,15 @@ body, html{
 	font-size: 20px;
 }
 
+h6	{
+	font-size: 15px;
+}
+
+.skills {
+	font-size: 18px;
+	text-align: center;
+}
+
 .social-media .links	{
 	text-align: center;	
 }

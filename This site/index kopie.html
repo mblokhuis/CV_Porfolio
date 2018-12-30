@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    
+    <!-- Stylesheet CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Animate on scroll  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        .row div{padding: 20px 10px; border: none;}
+    </style>
+  
+    </head>
+    <body>
+
+    <div class="container">
+
+<!-- Navigation Bar
+================================================================ -->      
+<nav class="navbar">
+                <span class='open-slide'>
+                        <a href="#" onclick="openSlideMenu()">
+                          <svg width="30" height="30">
+                                <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                                <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                                <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                           </svg>
+                        </a>
+                     </span>       
+                     
+                     <ul class="navbar-nav">
+                       <li><a href="#">Home</a></li>
+                       <li><a href="#">About me</a></li>
+                       <li><a href="#">Curriculum Vitae</a></li>
+                       <li><a href="#">Portfolio</a></li>
+                </ul>
+                </nav>
+                
+                <div id="side-menu" class="side-nav">
+                        <a href="#" class="btn-close"
+                        onclick="closeSlideMenu()">&times;</a>
+                        <a href="#">Home</a>
+                        <a href="#">About me</a>
+                        <a href="#">Curriculum Vitae</a>
+                        <a href="#">Portfolio</a>
+                </div>
+                
+                <div id="main">
+                </div>
+                
+                <script>
+                
+                function openSlideMenu(){
+                        document.getElementById('side-menu').style.width
+                        = '250px';        
+                        document.getElementById('main').style.marginLeft
+                        = '250px';        
+                        }
+                
+                        function closeSlideMenu(){
+                        document.getElementById('side-menu').style.width
+                        = '0';        
+                        document.getElementById('main').style.marginLeft
+                        = '0';        
+                        }
+                </script>
+                
+<!-- Avatar
+================================================================ -->
+        <div class="row" style="background: none;">
+            <div class="col-md"></div>
+            <div class="col-md-6" data-aos="flip-up" data-aos-duration="1500"><img src="avatar.jpg" alt="avatar" width=225px height="225px" class="rounded-circle imgcenter"></div>
+            <div class="col-md"></div>
+        </div>
+        
+<!-- About me
+================================================================ -->
+<div class="pimg1">
+    <div class="ptext">
+                <div class="name" data-aos="zoom-in-down" data-aos-duration="1500"><h2><b>Martijn Blokhuis</b></h4></div>
+                <br>
+                    <span class="border">
+                            About me
+                        </span>
+                        </div>
+                        </div>
+
+<section class="section section-light">
+
+<div class="text" data-aos="fade-left" data-aos-duration="1500"><p><br>
+        Welcome to my site. I'm an trainee junior webdeveloper. Things that make me happy are good design, good architecture and all things Apple.
+        Some of my hobbies are videography and iPhoneography. All photos you see on this website are made by myself on my trips to America.<br>
+        <br></p></div>
+
+<!-- Curriculum Vitae
+================================================================ -->
+<div class="text" data-aos="zoom-in-down" data-aos-duration="1500"><h4>PERSONALIA</h4>
+    <p>Martijn Blokhuis</p>
+    <i class="fa fa-address-card-o" style="font-size:36px"></i>
+    <p>Walmink Es 6 <br>7541PK Enschede</p>
+    <i class="fa fa-mobile-phone" style="font-size:36px"></i>
+    <p>+31 (0)6 48 10 72 2</p>
+    <i class="fa fa-at" style="font-size:36px"></i>        
+    <p>blokhuis.m@gmail.com</p>
+    <i class='far fa-calendar-alt' style='font-size:36px'></i>
+    <p>22 juni 1979</p>
+    <i class="fas fa-graduation-cap" style='font-size:36px'></i>
+    <br><lu>Administratief Juridisch Medewerker Openbaar Bestuur - niveau 4<br>ROC Oost Nederland, Hengelo</lu>
+</div> <br>
+</section>
+
+<!-- Werkervaring
+    ============================================================ -->
+    <div class="pimg2">
+            <div class="ptext">
+                <span class="border">
+                    Werkervaring
+                </span>
+            </div>
+        </div>
+
+    <section class="section section-dark">
+
+    <div class="text" data-aos="zoom-in-down" data-aos-duration="1500">
+    <br>
+    
+    <p><b></b><img src="img/Codegorilla.jpg" width="75px" height="75px" CodeGorilla - Enschede</b><br>Junior web developer <br><i>december 2018 - heden</i></p>
+    <p><b></b><img src="img/uwv-logo.png" width="60px" height="60px" UWV SMZ - Hengelo</b><br>Administratief Medewerker<br><i>juni 2018 - oktober 2018</i></p>
+    <p><b></b><img src="img/bld_logo_toeslagen.png" width="100px" height="50px" Belastingdienst LIC, Enschede</b><br>Administratief Medewerker Invorderingen Toeslagen<br><i>oktober 2017 - mei 2018</i></p>
+    <p><b></b><img src="img/EenKnipoog.jpeg" width="100px" height="100px" Een KnipOog - Almelo</b><br>Belasting adviseur / Budgetbegeleider<br><i>februari 2016 - juni 2017</i></p>
+    <p><b></b><img src="img/Gemeente Enschede.jpg" width="60px" height="60px" Gemeente Enschede</b><br>Notulist / Secretaris<br><i>september 2014- december 2015</i></p>
+    <p><b></b><img src="img/Cendris.png" width="50px" height="50px" Cendris - Enschede</b><br>Helpdesk Medewerker T-mobile<br><i>februari 2012 - september 2012</i></p>
+    <p><b></b><img src="img/TKF.png" width="60px" height="60px" Twentse Kabel Fabriek - Haaksbergen</b><br>Administratief Medewerker<br><i>november 2011 - januari 2012</i></p>
+                           
+    </div>
+
+    </section>
+
+<!-- Portfolio
+    ============================================================ -->
+    <div class="pimg3">
+            <div class="ptext">
+                <span class="border">
+                    Portfolio
+                </span>
+            </div>
+        </div>
+
+    <section id="portfolio">
+    <div class="section section-dark">
+
+    <p><div class="projects" data-aos="fade-right" data-aos-duration="1500">CodeGorilla Hackaton</div>
+       <div class="screenshot1"></div><a href="CeeCee website/htdocs/index.html"><img src="png/ceeceewebsite.png" data-aos="fade-right" data-aos-duration="1500" alt="ceeceewebsite" height="175" width="250"></div></div></div></p>
+            
+    <p><div class="projects" data-aos="fade-left" data-aos-duration="1500">AdressBook</div>
+       <div class="screenshot2"><a href="contactlist/index.html"><img src="png/Schermafdruk 2018-12-21 10.35.20.png" data-aos="fade-left" data-aos-duration="1500" alt="ceeceewebsite" height="175" width="250"></div></div></div></p>
+   
+    <p><div class="projects" data-aos="fade-right" data-aos-duration="1500">Persoonlijk leerplan</div>
+       <div class="screenshot3"><a href="#"></a><img src="png/leerplan.png" data-aos="fade-right" data-aos-duration="1500" alt="Persoonlijk leerplan" height="175" width="250"></div></div></div></p>
+    
+    <p><div class="projects" data-aos="fade-left" data-aos-duration="1500">This site</div>
+       <div class="screenshot4"><a href="index.html"></a><img src="png/Persoonlijkepagina.png" data-aos="fade-left" data-aos-duration="1500" alt="Persoonlijk leerplan" height="175" width="250"></div></div></div></p>
+        
+    <p><div class="projects" data-aos="fade-right" data-aos-duration="1500">My videos</div>
+       <div class="screenshot5"><a href="#"></a><img src="img/Chicago screenshot.png" data-aos="fade-right" data-aos-duration="1500" alt="My videos" height="175" width="250"></div></div></div></p>
+    
+</div> 
+</section>
+
+<!-- Social Media Buttons
+================================================================ -->
+<section class="social-media">
+    <div class="links">
+        <a href="https://github.com/mblokhuis"><img src='png/icons8-github-50.png' width="75px" height="75px"/></a></lu>
+        <a href="https://www.youtube.com/channel/UCRATgIoJP1Ea9AVrusSls0Q?view_as=subscriber"><img src='png/youtube-logo-png-46034.png' width="75px" height="75px"/></a></lu>
+        <a href="http://flickr.com/mblokhuis/" ><img src='png/flickr-icon-8734.png' width="75px" height="75px"/></a></lu>
+        <a href="https://nl.linkedin.com/in/mblokhuis/"><img src='png/linkedin-distorted-round-icon-by-Vexels.png' width="75px" height="75px" /></a></lu>
+        <a target="_blank" href="https://www.vexels.com/vectors/preview/140687/linkedin-distorted-round-icon"> <h6>Linkedin and Youtube distorted round icon</a> |   Designed by Vexels.com</a></h6>
+</div>
+</div>       
+</section>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+ 
+    <!-- animate on scroll script --> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init(); 
+</script>
+
+</body>
+</html>
