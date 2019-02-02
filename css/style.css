@@ -243,9 +243,7 @@ h6	{
 		.navbar-nav{display: none}
 	}
 
-	@media(max-width:568px){
-		.open-slide{display: none}
-	}
+	
 
 
 
