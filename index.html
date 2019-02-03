@@ -95,11 +95,12 @@
             <div class="col-md"></div>
         </div>
         
+        
 <!-- About me - section2
 ================================================================ -->
         <div id="section2" class="pimg1">
             <div class="ptext">
-            <div class="name" data-aos="zoom-in-down" data-aos-duration="1500"><h2><b>Martijn Blokhuis</b></h4></div>
+            <div class="name" data-aos="zoom-in-down" data-aos-duration="1500"><h2><b>Martijn Blokhuis</b></h2></div>
                 <br>
                     <span class="border">
                             About me
@@ -123,35 +124,27 @@
     <i class="fa fa-mobile-phone" style="font-size:36px"></i>
     <p>+31 (0)6 48 10 72 2</p>
     <i class="fa fa-at" style="font-size:36px"></i>        
-    <a><href mailto:blokhuis.m@gmail.com</p>
+    <p>blokhuis.m@gmail.com</p>
     <i class='far fa-calendar-alt' style='font-size:36px'></i>
     <p>22 juni 1979</p>
     <i class="fas fa-graduation-cap" style='font-size:36px'></i> <b>Opleidingen</b>
     
-    </p><lu>Junior Webdeveloper<br>CodeGorilla, Enschede</lu><br>
+    <br><lu>Junior Webdeveloper<br>CodeGorilla, Enschede</lu><br>
     <br><lu>Management Economie & Recht<br>Saxion Hogeschool, Enschede</lu><br>
     <br><lu>Administratief Juridisch Medewerker Openbaar Bestuur - niveau 4<br>ROC Oost Nederland, Hengelo</lu><br>
     
 
 </div> <br>
 
-<video width="320" height="240" controls>
-  <source src="mov/Electricity.mp4" type="video/mp4">
-</video>
-
-
-
-
-
 <!--  Coding skills - section4
 ================================================================ -->
 <div id="section4"></div><section class="skills" data-aos="flip-right" data-aos-duration="1500">
 <p>Coding Skills</p>
 
-<img src="png/html5-css-javascript-logos.png" width="500px"></img>
+<img src="png/html5-css-javascript-logos.png" width="500px">
 <br>
 <br>
-<img src="png/phplogo-highres1.png" width="250px"></img>
+<img src="png/phplogo-highres1.png" width="250px">
 
 <br>
 <br>
@@ -184,7 +177,7 @@
                            
     </div>
 
-    </section>
+    </section>  
 
 <!-- Portfolio - section6
     ============================================================ -->
@@ -220,6 +213,38 @@
 
 </div> 
 
+<!-- JavaScript slideshow  
+================================================================ -->
+ 
+<script>
+    var i = 0; //start point
+    var images = [];
+    var time = 3000;
+    
+    //image list
+    images[0] "http://lorempixel.com/400/200/animals";
+    images[1] "http://lorempixel.com/400/200/sports";
+    images[2] "http://lorempixel.com/400/200/food";
+    images[3] "http://lorempixel.com/400/200/people";
+    
+    //change images
+    function changeImg(){
+        document.slide.src = images[i];
+        
+        if(i < images.lenght - 1){
+           i++;
+        } else {
+            i = 0;
+        }
+    
+        setTimeout("changeImg"()", time)
+    }
+    
+    window.onload = changeImg;
+                   
+</script>
+        
+<img name="slide" width="400" height="200">  
 
 <!-- Social Media Buttons
 ================================================================ -->
