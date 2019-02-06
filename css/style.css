@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'AzonixFont';
+  src: asset-url('AzonixFont.otf');
+}
+
+@font-face {
+  font-family: 'AzonixFont';
+  src: asset-url('AzonixFont.otf');
+}
+
 body, html{
 	height: 100%;
 	margin: 0;
