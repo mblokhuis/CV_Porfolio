@@ -22,8 +22,10 @@
     <style>
         @font-face {
 
-
-        
+        font-family: Azonix;
+        src: url(fonts/Azonix.otf);
+        }
+     
            html {
   scroll-behavior: smooth;
 }
@@ -91,6 +93,7 @@
                         }
                 </script>
                 
+                                                
 <!-- Avatar - section1
 ================================================================ -->
         <div id="section1" class="row" style="background: none;">
@@ -115,9 +118,52 @@
 <section class="section section-light">
 
 <div class="text" data-aos="fade-left" data-aos-duration="1500"><p><br>
-        Welcome to my site. I'm an trainee junior webdeveloper. Things that make me happy are good design, good architecture and all things Apple Macintosh.
+        Welcome to my site. I'm an trainee junior webdeveloper. Things that make me happy are good design, good architecture and all things that have to do with Apple Macintosh computers .
         Some of my hobbies are videography and iPhoneography. All photos you see on this website are made by myself on my trips to America.<br>
         <br></p></div>
+        
+        <hr>
+
+<!-- JavaScript slideshow  
+================================================================ -->
+ 
+<script>
+var i = 0; 			// Start Point
+var images = [];	// Images Array
+var time = 2000;	// Time Between Switch
+	 
+// Image List
+images[0] = "img/americantruck.jpg";
+images[1] = "img/policecar.jpg";
+images[2] = "img/sanfrancisco.jpg";
+images[3] = "img/stinkingrose.jpg";
+images[3] = "img/goldengatebridge.jpg";
+    
+
+// Change Image
+function changeImg(){
+	document.slide.src = images[i];
+
+	// Check If Index Is Under Max
+	if(i < images.length - 1){
+	  // Add 1 to Index
+	  i++; 
+	} else { 
+		// Reset Back To O
+		i = 0;
+	}
+
+	// Run function every x seconds
+	setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg;
+    </script>
+    
+   <img name="slide" width="500" height="375" />
+
+<hr>
 
 <!-- Personal Information - section3
 ================================================================ -->
@@ -216,39 +262,6 @@
        <div class="screenshot5"><a href="https://www.youtube.com/channel/UCRATgIoJP1Ea9AVrusSls0Q?view_as=subscriber"></a><img src="img/Chicago screenshot.png" data-aos="fade-right" data-aos-duration="1500" alt="My videos" height="175" width="250">
 
 </div> 
-
-<!-- JavaScript slideshow  
-================================================================ -->
- 
-<script>
-    var i = 0; //start point
-    var images = [];
-    var time = 3000;
-    
-    //image list
-    images[0] "http://lorempixel.com/400/200/animals";
-    images[1] "http://lorempixel.com/400/200/sports";
-    images[2] "http://lorempixel.com/400/200/food";
-    images[3] "http://lorempixel.com/400/200/people";
-    
-    //change images
-    function changeImg(){
-        document.slide.src = images[i];
-        
-        if(i < images.lenght - 1){
-           i++;
-        } else {
-            i = 0;
-        }
-    
-        setTimeout("changeImg"()", time)
-    }
-    
-    window.onload = changeImg;
-                   
-</script>
-        
-<img name="slide" width="400" height="200">  
 
 <!-- Social Media Buttons
 ================================================================ -->
