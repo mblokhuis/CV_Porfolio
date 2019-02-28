@@ -23,6 +23,11 @@ body, html{
 	background-attachment: fixed;
 }
 
+.slideshow	{
+	text-align: center;
+
+}
+
 .pimg1{
 	background-image: url('../img/guggenheimbw.png');
 	min-height: 400px;
